@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhony Wictor Santos - Desenvolvedor & Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body class="bg-[#f6f8f8] text-[#6e96a6]">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#004370]">Jhony Wictor Santos</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#experience" class="nav-link">Experiências</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-2xl text-[#004370]"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-6 py-3" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#experience" class="nav-link">Experiências</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-r from-[#004370] to-[#5faee3] text-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Transformando ideias em experiências digitais intuitivas e acessíveis</h1>
+                <p class="text-xl mb-8">Desenvolvedor Web & UI/UX Designer</p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-[#ff5833] hover:bg-[#e04a2a] text-white px-6 py-3 rounded-lg font-medium transition duration-300">Ver Projetos</a>
+                    <a href="#contact" class="border-2 border-white hover:bg-white hover:text-[#004370] text-white px-6 py-3 rounded-lg font-medium transition duration-300">Fale Comigo</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="src/assets/images/profile_jw.jpeg" alt="Jhony Wictor Santos" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-[#004370] mb-12 text-center">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <p class="text-lg mb-6">Sou estudante de Ciência da Computação pela UFAL, apaixonado por criar soluções acessíveis e intuitivas.</p>
+                    <p class="text-lg mb-6">Com experiências no TRE/AL e Impacto Bioenergia, atuei com suporte técnico, infraestrutura de redes e desenvolvimento web. Tenho domínio em HTML5, CSS3, UI/UX Design, Python, Git e fundamentos em Java, buscando constantemente alinhar tecnologia à experiência do usuário.</p>
+                    <p class="text-lg">Minha abordagem combina habilidades técnicas com uma compreensão profunda das necessidades do usuário, resultando em produtos digitais que são tanto funcionais quanto agradáveis de usar.</p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#85c1ae]">
+                        <i class="fas fa-graduation-cap text-3xl text-[#004370] mb-4"></i>
+                        <h3 class="font-bold text-lg text-[#004370] mb-2">Formação Acadêmica</h3>
+                        <p>Ciência da Computação - UFAL</p>
+                    </div>
+                    <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#5faee3]">
+                        <i class="fas fa-briefcase text-3xl text-[#004370] mb-4"></i>
+                        <h3 class="font-bold text-lg text-[#004370] mb-2">Experiência Profissional</h3>
+                        <p>2+ anos em TI e desenvolvimento</p>
+                    </div>
+                    <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#ff5833]">
+                        <i class="fas fa-code text-3xl text-[#004370] mb-4"></i>
+                        <h3 class="font-bold text-lg text-[#004370] mb-2">Especialização</h3>
+                        <p>Frontend & UI/UX Design</p>
+                    </div>
+                    <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#1f8fff]">
+                        <i class="fas fa-rocket text-3xl text-[#004370] mb-4"></i>
+                        <h3 class="font-bold text-lg text-[#004370] mb-2">Objetivo</h3>
+                        <p>Criar experiências digitais excepcionais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-[#f6f8f8]">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-[#004370] mb-12 text-center">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-white p-6 rounded-lg shadow-md skill-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-[#5faee3] mr-3"></i>
+                        <h3 class="text-xl font-bold text-[#004370]">Frontend</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>HTML5</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#85c1ae]" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#85c1ae]" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#85c1ae]" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Git</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#85c1ae]" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- UI/UX Skills -->
+                <div class="bg-white p-6 rounded-lg shadow-md skill-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paint-brush text-2xl text-[#ff5833] mr-3"></i>
+                        <h3 class="text-xl font-bold text-[#004370]">UI/UX Design</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Figma</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#ff5833]" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Wireframing</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#ff5833]" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Heurísticas de Nielsen</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#ff5833]" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Prototipagem</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#ff5833]" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend Skills -->
+                <div class="bg-white p-6 rounded-lg shadow-md skill-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-server text-2xl text-[#1f8fff] mr-3"></i>
+                        <h3 class="text-xl font-bold text-[#004370]">Backend</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#1f8fff]" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Java</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill bg-[#1f8fff]" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-users text-2xl text-[#5faee3] mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#004370]">Soft Skills</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#e0f2fe] text-[#004370] px-3 py-1 rounded-full">Comunicação</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-3 py-1 rounded-full">Autonomia</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-3 py-1 rounded-full">Organização</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-3 py-1 rounded-full">Trabalho em equipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-[#004370] mb-12 text-center">Projetos</h2>
+            <!-- Featured Project -->
+            <div class="mb-16">
+                <div class="flex flex-col lg:flex-row items-center bg-[#f6f8f8] rounded-lg overflow-hidden shadow-lg">
+                    <div class="lg:w-1/2">
+                        <img src="src/assets/images/fast food repository/poster-burguer.jpg" alt="Landing Page Fast Food" class="w-full h-full object-cover">
+                    </div>
+                    <div class="lg:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-[#004370] mb-4">CABULOSO'S BURGUER</h3>
+                        <p class="mb-6">Uma landing page moderna e responsiva para uma rede de fast food, focada em conversão e experiência do usuário.</p>
+                        <div class="mb-6">
+                            <h4 class="font-bold text-[#004370] mb-2">Tecnologias utilizadas:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-[#85c1ae] text-white px-3 py-1 rounded-full">HTML5</span>
+                                <span class="bg-[#85c1ae] text-white px-3 py-1 rounded-full">CSS3</span>
+                                <span class="bg-[#85c1ae] text-white px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-[#ff5833] text-black px-3 py-1 rounded-full">Figma</span>
+                                <span class="bg-[#85c1ae] text-white px-3 py-1 rounded-full">GSAP</span>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-bold text-[#004370] mb-2">Desafios superados:</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Otimização de performance para carregamento rápido</li>
+                                <li>Design responsivo para todos os dispositivos</li>
+                                <li>Implementação de animações suaves sem prejudicar a UX</li>
+                            </ul>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://jhonywsantos.github.io/LandingPage-Fast-Food/" class="bg-[#004370] hover:bg-[#002d4d] text-white px-6 py-2 rounded-lg font-medium transition duration-300">Ver Projeto</a>
+                            <a href="https://github.com/jhonywsantos/LandingPage-Fast-Food" class="border-2 border-[#004370] hover:bg-[#004370] hover:text-white text-[#004370] px-6 py-2 rounded-lg font-medium transition duration-300">Código no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other Projects -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition duration-300 border-t-4 border-[#5faee3]">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Dashboard Analytics" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#004370] mb-2">Dashboard Analytics</h3>
+                        <p class="mb-4">Painel administrativo com visualização de dados e métricas de negócio.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">Chart.js</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                        <a href="#" class="text-[#1f8fff] hover:text-[#004370] font-medium flex items-center">
+                            Ver Projeto <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition duration-300 border-t-4 border-[#ff5833]">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="E-commerce Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#004370] mb-2">E-commerce Website</h3>
+                        <p class="mb-4">Loja virtual completa com carrinho de compras e integração de pagamento.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-[#1f8fff] hover:text-[#004370] font-medium flex items-center">
+                            Ver Projeto <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card transition duration-300 border-t-4 border-[#85c1ae]">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Portfolio Template" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#004370] mb-2">Portfolio Template</h3>
+                        <p class="mb-4">Template responsivo e moderno para portfólios profissionais.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">HTML5</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">CSS3</span>
+                            <span class="bg-[#e0f2fe] text-[#004370] px-2 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-[#1f8fff] hover:text-[#004370] font-medium flex items-center">
+                            Ver Projeto <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-[#1f8fff] hover:text-[#004370] font-medium text-lg">
+                    Ver mais projetos no GitHub <i class="fab fa-github ml-2 text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 bg-[#f6f8f8]">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-[#004370] mb-12 text-center">Experiências</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Experience 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md relative pl-20">
+                    <div class="absolute left-6 top-6 w-12 h-12 rounded-full bg-[#004370] flex items-center justify-center text-white">
+                        <i class="fas fa-landmark text-xl"></i>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+                        <h3 class="text-xl font-bold text-[#004370]">TRE/AL</h3>
+                        <span class="text-[#ff5833] font-medium">2024 - 2024</span>
+                    </div>
+                    <p class="text-[#004370] font-medium mb-2">Técnico eleitoral</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Suporte técnico aos usuários e manutenção de equipamentos</li>
+                        <li>Configuração e manutenção de infraestrutura de redes</li>
+                        <li>Participação no processo eleitoral digital</li>
+                        <li>Documentação de processos técnicos</li>
+                    </ul>
+                </div>
+                <!-- Experience 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md relative pl-20">
+                    <div class="absolute left-6 top-6 w-12 h-12 rounded-full bg-[#004370] flex items-center justify-center text-white">
+                        <i class="fas fa-industry text-xl"></i>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+                        <h3 class="text-xl font-bold text-[#004370]">Impacto Bioenergia</h3>
+                        <span class="text-[#ff5833] font-medium">2022 - 2024</span>
+                    </div>
+                    <p class="text-[#004370] font-medium mb-2">Jovem Aprendiz de TI</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Desenvolvimento de soluções web internas</li>
+                        <li>Gerenciamento de sistemas administrativos</li>
+                        <li>Treinamento de usuários em ferramentas digitais</li>
+                        <li>Otimização de processos através da tecnologia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-[#004370] mb-12 text-center">Certificações</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Certification 1 -->
+                <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#5faee3]">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-microsoft text-3xl text-[#5faee3] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#004370]">Sistemas de Informação Administrativos</h3>
+                            <p class="text-sm">Microsoft</p>
+                        </div>
+                    </div>
+                    <p>Certificação em sistemas de informação com foco em soluções administrativas e gestão de dados.</p>
+                </div>
+                <!-- Certification 2 -->
+                <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#ff5833]">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-python text-3xl text-[#ff5833] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#004370]">Jornada Python</h3>
+                            <p class="text-sm">Hashtag Treinamentos</p>
+                        </div>
+                    </div>
+                    <p>Formação completa em Python cobrindo desde fundamentos até aplicações práticas em análise de dados.</p>
+                </div>
+                <!-- Certification 3 -->
+                <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#85c1ae]">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-3xl text-[#85c1ae] mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#004370]">Informática Aplicada</h3>
+                            <p class="text-sm">Instituto Federal Sul-rio-grandense</p>
+                        </div>
+                    </div>
+                    <p>Certificação em informática aplicada cobrindo pacote Office, sistemas operacionais e conceitos básicos de TI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-[#004370] text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Contato</h2>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Vamos conversar!</h3>
+                    <p class="mb-8">Estou sempre aberto a novas oportunidades, projetos desafiadores ou simplesmente para bater um papo sobre tecnologia e inovação.</p>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-[#002d4d] border border-[#5faee3] focus:outline-none focus:ring-2 focus:ring-[#5faee3]">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-[#002d4d] border border-[#5faee3] focus:outline-none focus:ring-2 focus:ring-[#5faee3]">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-medium">Mensagem</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-[#002d4d] border border-[#5faee3] focus:outline-none focus:ring-2 focus:ring-[#5faee3]"></textarea>
+                        </div>
+                        <button type="submit" class="bg-[#ff5833] hover:bg-[#e04a2a] text-white px-8 py-3 rounded-lg font-medium transition duration-300">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-2xl text-[#5faee3] mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">E-mail</h4>
+                                <a href="mailto:jhonywictorsantos@gmail.com" class="hover:text-[#5faee3] transition duration-300">jhonywictorsantos@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-2xl text-[#5faee3] mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Telefone</h4>
+                                <a href="tel:+5582999999999" class="hover:text-[#5faee3] transition duration-300">+55 (82) 99999-9999</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-2xl text-[#5faee3] mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Localização</h4>
+                                <p>Alagoas - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-bold mb-6">Redes Sociais</h3>
+                        <div class="flex space-x-6">
+                            <a href="https://www.linkedin.com/in/jhony-wictor-n-santos-4b8a85237" class="w-12 h-12 rounded-full bg-[#002d4d] flex items-center justify-center text-2xl hover:bg-[#5faee3] transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/jhonywsantos" class="w-12 h-12 rounded-full bg-[#002d4d] flex items-center justify-center text-2xl hover:bg-[#5faee3] transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/jhonywictor?igsh=MW81OWlwZ2Jscmk2bA==" class="w-12 h-12 rounded-full bg-[#002d4d] flex items-center justify-center text-2xl hover:bg-[#5faee3] transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="malito:jhonywictorsantos@gmail.com" class="w-12 h-12 rounded-full bg-[#002d4d] flex items-center justify-center text-2xl hover:bg-[#5faee3] transition duration-300">
+                                <i class="fab fa-file"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-12 bg-[#002d4d] p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-4">
+                            <i class="fa-solid fa-briefcase mr-2"></i>Disponibilidade para oportunidades
+                        </h4>
+                        <p class="mb-4">Atualmente estou disponível para:</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><i class="fa-solid fa-check mr-2"></i>Freelance de desenvolvimento web</li>
+                            <li><i class="fa-solid fa-check mr-2"></i>Projetos de UI/UX Design</li>
+                            <li><i class="fa-solid fa-check mr-2"></i>Oportunidades de estágio ou júnior em TI</li>
+                        </ul>
+                        <a href="#" class="inline-block mt-4 text-[#5faee3] hover:text-white font-medium">
+                            Baixar currículo <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#002d4d] text-white py-8 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold">Jhony Wictor Santos</div>
+                    <p class="text-sm mt-1">Desenvolvedor Web & UI/UX Designer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-[#5faee3] transition duration-300">Termos de Uso</a>
+                    <a href="#" class="hover:text-[#5faee3] transition duration-300">Política de Privacidade</a>
+                </div>
+            </div>
+            <div class="border-t border-[#004370] mt-8 pt-8 text-center">
+                <p>&copy; 2025 Jhony Wictor Santos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
