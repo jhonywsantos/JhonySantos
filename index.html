@@ -390,7 +390,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 px-6" style="background-image: url('src/assets/images/degradê/degrade3.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <section id="experience" class="py-20 px-6" style="background-image: url('src/assets/images/degradê/beach.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-[#004370] mb-12 text-center">Experiências</h2>
             <div class="max-w-3xl mx-auto space-y-8">
@@ -487,6 +487,7 @@
             <h2 class="text-3xl font-bold text-black mb-12 text-center">Contato</h2>
             
             <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Formulário -->
                 <div class="lg:w-1/2">
                     <h3 class="text-2xl font-bold text-black mb-6">Vamos conversar!</h3>
                     <p class="text-[#004370] mb-8">Estou sempre aberto a novas oportunidades, projetos desafiadores ou simplesmente para bater um papo sobre tecnologia e inovação.</p>
@@ -507,65 +508,85 @@
                         <button type="submit" class="bg-[#ff5833] hover:bg-[#e04a2a] text-white px-8 py-3 rounded-lg font-medium transition duration-300">Enviar Mensagem</button>
                     </form>
                 </div>
-                
+
+                <!-- Informações de Contato -->
                 <div class="lg:w-1/2">
-                    <h3 class="text-2xl font-bold text-black mb-6">Informações de Contato</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope text-2xl text-[#004370] mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="text-[#004370] font-bold">E-mail</h4>
-                                <a href="mailto:jhonywictorsantos@gmail.com" class="hover:text-[#004370] transition duration-300">jhonywictorsantos@gmail.com</a>
+                    <div class="bg-[#fff7dd] p-8 rounded-xl backdrop-blur-sm border border-white/10 shadow-lg">
+                        <h3 class="text-2xl font-bold text-black mb-8 pb-4 border-b border-white/20">Informações de Contato</h3>
+
+                        <div class="grid grid-cols-1 gap-3">
+                            <!-- Item de Contato 1 -->
+                            <div class="group flex items-center space-x-4 p-4 bg-white rounded-lg transition-all duration-300 hover:bg-[#5faee3] border border-[#004370]/20">
+                                <div class="bg-[#004370]/10 p-3 rounded-lg transition-all duration-300 group-hover:bg-white/20">
+                                    <i class="fas fa-envelope text-lg text-[#004370]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-[#004370] font-semibold text-md group-hover:text-white transition-colors duration-300">E-mail</h4>
+                                    <a href="mailto:jhonywictorsantos@gmail.com" class="text-[#004370] text-sm group-hover:text-white transition-colors duration-300">
+                                        jhonywictorsantos@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Item de Contato 2 -->
+                            <div class="group flex items-center space-x-4 p-4 bg-white rounded-lg transition-all duration-300 hover:bg-[#5faee3] border border-[#004370]/20">
+                                <div class="bg-[#004370]/10 p-3 rounded-lg transition-all duration-300 group-hover:bg-white/20">
+                                    <i class="fas fa-phone-alt text-lg text-[#004370]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-[#004370] font-semibold text-md group-hover:text-white transition-colors duration-300">Telefone</h4>
+                                    <a href="tel:+5582999999999" class="text-[#004370] text-sm group-hover:text-white transition-colors duration-300">
+                                        (82) 99999-9999
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Item de Contato 3 -->
+                            <div class="group flex items-center space-x-4 p-4 bg-white rounded-lg transition-all duration-300 hover:bg-[#5faee3] border border-[#004370]/20">
+                                <div class="bg-[#004370]/10 p-3 rounded-lg transition-all duration-300 group-hover:bg-white/20">
+                                    <i class="fas fa-map-marker-alt text-lg text-[#004370]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-[#004370] font-semibold text-md group-hover:text-white transition-colors duration-300">Localização</h4>
+                                    <p class="text-[#004370] text-sm group-hover:text-white transition-colors duration-300">Alagoas - Brasil</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-phone-alt text-2xl text-[#004370] mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="text-[#004370] font-bold">Telefone</h4>
-                                <a href="tel:+5582999999999" class="hover:text-[#004370] transition duration-300">+55 (82) xxxxx-xxxx</a>
+                            
+                        <!-- Redes Sociais -->
+                        <div class="mt-10 pt-6 border-t border-white/20">
+                            <h3 class="text-2xl font-bold text-black mb-6">Redes Sociais</h3>
+                            <div class="flex justify-center space-x-8">
+                                <a href="https://www.linkedin.com/in/jhony-wictor-n-santos-4b8a85237/" class="group w-14 h-14 rounded-full bg-white flex items-center justify-center text-2xl hover:bg-[#5faee3] hover:scale-110 transition duration-300 border border-[#004370]/20">
+                                    <i class="fab fa-linkedin-in text-[#004370] group-hover:text-white transition-colors duration-300"></i>
+                                </a>
+                                <a href="https://github.com/jhonywsantos" class="group w-14 h-14 rounded-full bg-white flex items-center justify-center text-2xl hover:bg-[#5faee3] hover:scale-110 transition duration-300 border border-[#004370]/20">
+                                    <i class="fab fa-github text-[#004370] group-hover:text-white transition-colors duration-300"></i>
+                                </a>
+                                <a href="https://www.instagram.com/jhonywictor" class="group w-14 h-14 rounded-full bg-white flex items-center justify-center text-2xl hover:bg-[#5faee3] hover:scale-110 transition duration-300 border border-[#004370]/20">
+                                    <i class="fab fa-instagram text-[#004370] group-hover:text-white transition-colors duration-300"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-2xl text-[#004370] mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="text-[#004370] font-bold">Localização</h4>
-                                <p>Alagoas - Brasil</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-12">
-                        <h3 class="text-2xl font-bold mb-6">Redes Sociais</h3>
-                        <div class="flex space-x-6">
-                            <a href="https://www.linkedin.com/in/jhony-wictor-n-santos-4b8a85237/" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-2xl hover:bg-[#5faee3] transition duration-300 backdrop-blur-sm">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://github.com/jhonywsantos" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-2xl hover:bg-[#5faee3] transition duration-300 backdrop-blur-sm">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.instagram.com/jhonywictor" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-2xl hover:bg-[#5faee3] transition duration-300 backdrop-blur-sm">
-                                <i class="fab fa-instagram"></i>
+                        
+                        <!-- Disponibilidade -->
+                        <div class="mt-10 bg-[#004370]/10 p-6 rounded-lg border border-[#004370]/20">
+                            <h4 class="font-bold text-lg mb-4 text-[#004370]">Disponibilidade para oportunidades</h4>
+                            <p class="mb-4 text-[#004370]">Atualmente estou disponível para:</p>
+                            <ul class="list-disc pl-5 space-y-2 text-[#004370]">
+                                <li>Freelance de desenvolvimento web</li>
+                                <li>Projetos de UI/UX Design</li>
+                                <li>Oportunidades de estágio ou júnior em TI</li>
+                            </ul>
+                            <a href="src/assets/Information/Jhony Wictor do Nascimento Santos.pdf" class="inline-block mt-4 text-[#5faee3] hover:text-[#004370] font-medium transition duration-300">
+                                Baixar currículo <i class="fas fa-download ml-2"></i>
                             </a>
                         </div>
-                    </div>
-                    
-                    <div class="mt-12 bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                        <h4 class="font-bold text-lg mb-4">Disponibilidade para oportunidades</h4>
-                        <p class="mb-4">Atualmente estou disponível para:</p>
-                        <ul class="list-disc pl-5 space-y-2">
-                            <li>Freelance de desenvolvimento web</li>
-                            <li>Projetos de UI/UX Design</li>
-                            <li>Oportunidades de estágio ou júnior em TI</li>
-                        </ul>
-                        <a href="src/assets/Information/Jhony Wictor do Nascimento Santos.pdf" class="inline-block mt-4 text-[#5faee3] hover:text-white font-medium">
-                            Baixar currículo <i class="fas fa-download ml-2"></i>
-                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                </div>
+                </div>
+                </section>
 
     <!-- Footer -->
     <footer class="bg-[#002d4d] text-white py-8 px-6">
