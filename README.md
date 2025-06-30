@@ -8,7 +8,7 @@ Este é o meu **portfólio profissional**, onde apresento meus projetos, habilid
 
 ## 📸 Preview
 
-![Preview do Portfólio](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/preview.png)
+![Preview do Portfólio](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/src/assets/Information/details/photo1.png)
 
 > 💡 *Se a imagem acima não carregar, acesse o projeto direto no [GitHub Pages](https://jhonywsantos.github.io/JhonySantos/)*
 
@@ -29,9 +29,13 @@ Este é o meu **portfólio profissional**, onde apresento meus projetos, habilid
 
 - 🖼️ Apresentação visual responsiva dos projetos
 - 🔗 Links diretos para repositórios e deploys
+![Repositórios](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/src/assets/Information/details/photo4.png)
 - 🧠 Seções de habilidades, contato e resumo profissional
+![Habilidades](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/src/assets/Information/details/photo3.png)
+![Contato](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/src/assets/Information/details/photo6.png)
+![Contato](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/src/assets/Information/details/photo2.png)
 - 🎨 Design clean, centrado e com animações leves
-
+![Experiências](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/src/assets/Information/details/photo5.png)
 ---
 
 ## 🚀 Como executar localmente
