@@ -1,0 +1,45 @@
+# 💼 Portfólio Pessoal - Jhony Santos
+
+Este é o meu **portfólio profissional**, onde apresento meus projetos, habilidades e trajetória na área de tecnologia. Construído com foco em design responsivo, leveza e objetividade — direto ao ponto, assim como deve ser.
+
+[🌐 Acesse online](https://jhonywsantos.github.io/JhonySantos/)
+
+---
+
+## 📸 Preview
+
+![Preview do Portfólio](https://raw.githubusercontent.com/jhonywsantos/JhonySantos/main/preview.png)
+
+> 💡 *Se a imagem acima não carregar, acesse o projeto direto no [GitHub Pages](https://jhonywsantos.github.io/JhonySantos/)*
+
+---
+
+## ⚙️ Tecnologias utilizadas
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=fff)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=fff)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?style=for-the-badge&logo=github&logoColor=fff)
+
+---
+
+## 🧩 Funcionalidades
+
+- 🖼️ Apresentação visual responsiva dos projetos
+- 🔗 Links diretos para repositórios e deploys
+- 🧠 Seções de habilidades, contato e resumo profissional
+- 🎨 Design clean, centrado e com animações leves
+
+---
+
+## 🚀 Como executar localmente
+# Clone o repositório
+git clone https://github.com/jhonywsantos/JhonySantos.git
+
+# Acesse a pasta
+cd JhonySantos
+
+# Abra o arquivo index.html no seu navegador
+Ou acesse direto: https://jhonywsantos.github.io/JhonySantos/
