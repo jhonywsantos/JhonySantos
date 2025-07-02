@@ -50,6 +50,81 @@
         .nav-link:hover::after {
             width: 100%;
         }
+                .certifications-container {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .certifications-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 2rem; /* Espaço entre os cards */
+        }
+        
+        .certification-card {
+            flex: 0 0 auto;
+            min-width: 0; /* Permite que os cards tenham seu tamanho natural */
+        }
+        
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 67, 112, 0.7);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background: rgba(0, 67, 112, 1);
+        }
+        
+        .prev {
+            left: -20px;
+        }
+        
+        .next {
+            right: -20px;
+        }
+        
+        .indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 8px;
+        }
+        
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .indicator.active {
+            background: #004370;
+            transform: scale(1.2);
+        }
+        
+        /* Mantendo o estilo original dos cards */
+        .certification-card .card-inner {
+            background: #f6f8f8;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border-left-width: 4px;
+            height: 100%;
+        }
     </style>
 </head>
 <body class="bg-[#f6f8f8] text-[#6e96a6]">
@@ -454,49 +529,248 @@
 
 
     <!-- Certifications Section -->
-    <section class="py-20 px-6 bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-5xl font-bold text-[#004370] mb-12 text-center">Certificações</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Certification 1 -->
-                <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#5faee3]">
-                    <div class="flex items-center mb-4">
-                        <i class="fab fa-microsoft text-3xl text-[#5faee3] mr-4"></i>
-                        <div>
-                            <h3 class="text-xl font-bold text-[#004370]">Sistemas de Informação Administrativos</h3>
-                            <p class="text-sm">Microsoft</p>
-                        </div>
-                    </div>
-                    <p>Certificação em sistemas de informação com foco em soluções administrativas e gestão de dados.</p>
-                </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .certifications-container {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .certifications-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .certification-card {
+            flex: 0 0 100%;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 67, 112, 0.7);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background: rgba(0, 67, 112, 1);
+        }
+        
+        .prev {
+            left: 10px;
+        }
+        
+        .next {
+            right: 10px;
+        }
+        
+        .indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .indicator.active {
+            background: #004370;
+            transform: scale(1.2);
+        }
+        
+        @media (min-width: 768px) {
+            .certification-card {
+                flex: 0 0 50%;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .certification-card {
+                flex: 0 0 33.333%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Certifications Section -->
+        <section class="py-20 px-6 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-[#004370] mb-12 text-center">Certificações</h2>
                 
-                <!-- Certification 2 -->
-                <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#ff5833]">
-                    <div class="flex items-center mb-4">
-                        <i class="fab fa-python text-3xl text-[#ff5833] mr-4"></i>
-                        <div>
-                            <h3 class="text-xl font-bold text-[#004370]">Jornada Python</h3>
-                            <p class="text-sm">Hashtag Treinamentos</p>
+                <div class="certifications-container relative px-4">
+                    <div class="certifications-track">
+                        <!-- Certification 1 -->
+                        <div class="certification-card">
+                            <div class="card-inner border-[#5faee3]">
+                                <div class="flex items-center mb-3">
+                                    <i class="fab fa-microsoft text-2xl text-[#5faee3] mr-3"></i>
+                                    <div>
+                                        <h3 class="card-title">Sistemas de Informação</h3>
+                                        <p class="card-subtitle">Microsoft</p>
+                                    </div>
+                                </div>
+                                <p class="card-content">Certificação em sistemas de informação com foco em soluções administrativas e gestão de dados corporativos.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Certification 2 -->
+                        <div class="certification-card">
+                            <div class="card-inner border-[#ff5833]">
+                                <div class="flex items-center mb-3">
+                                    <i class="fab fa-python text-2xl text-[#ff5833] mr-3"></i>
+                                    <div>
+                                        <h3 class="card-title">Jornada Python</h3>
+                                        <p class="card-subtitle">Hashtag Treinamentos</p>
+                                    </div>
+                                </div>
+                                <p class="card-content">Formação completa em Python cobrindo desde fundamentos até aplicações práticas em análise de dados.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Certification 3 -->
+                        <div class="certification-card">
+                            <div class="card-inner border-[#85c1ae]">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-laptop-code text-2xl text-[#85c1ae] mr-3"></i>
+                                    <div>
+                                        <h3 class="card-title">Informática Aplicada</h3>
+                                        <p class="card-subtitle">IF Sul-rio-grandense</p>
+                                    </div>
+                                </div>
+                                <p class="card-content">Certificação em informática aplicada cobrindo pacote Office, sistemas operacionais e conceitos básicos de TI.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Certification 4 -->
+                        <div class="certification-card">
+                            <div class="card-inner border-[#004370]">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-database text-2xl text-[#004370] mr-3"></i>
+                                    <div>
+                                        <h3 class="card-title">Análise de Banco de Dados em Power BI</h3>
+                                        <p class="card-subtitle">Fundação Bradesco</p>
+                                    </div>
+                                </div>
+                                <p class="card-content">Certificação em administração e otimização de bancos de dados em ambientes corporativos.</p>
+                            </div>
                         </div>
                     </div>
-                    <p>Formação completa em Python cobrindo desde fundamentos até aplicações práticas em análise de dados.</p>
-                </div>
-                
-                <!-- Certification 3 -->
-                <div class="bg-[#f6f8f8] p-6 rounded-lg border-l-4 border-[#85c1ae]">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-laptop-code text-3xl text-[#85c1ae] mr-4"></i>
-                        <div>
-                            <h3 class="text-xl font-bold text-[#004370]">Informática Aplicada</h3>
-                            <p class="text-sm">Instito Federal do Sul-rio-grandense</p>
-                        </div>
-                    </div>
-                    <p>Certificação em informática aplicada cobrindo pacote Office, sistemas operacionais e conceitos básicos de TI.</p>
+                    
+                    <button class="nav-btn prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="indicators"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.certifications-track');
+            const cards = document.querySelectorAll('.certification-card');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            const indicatorsContainer = document.querySelector('.indicators');
+            
+            let currentIndex = 0;
+            const cardCount = cards.length;
+            const cardWidth = 300; // Largura fixa dos cards
+            const gap = 24; // Espaço entre os cards (1.5rem)
+            
+            // Criar indicadores
+            cards.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.classList.add('indicator');
+                if (index === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => {
+                    goToSlide(index);
+                });
+                indicatorsContainer.appendChild(indicator);
+            });
+            
+            const indicators = document.querySelectorAll('.indicator');
+            
+            function updatePosition() {
+                const offset = -currentIndex * (cardWidth + gap);
+                track.style.transform = `translateX(${offset}px)`;
+                
+                // Atualizar indicadores
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            function goToSlide(index) {
+                if (index < 0) index = cardCount - 1;
+                if (index >= cardCount) index = 0;
+                
+                currentIndex = index;
+                updatePosition();
+            }
+            
+            function nextSlide() {
+                goToSlide(currentIndex + 1);
+            }
+            
+            function prevSlide() {
+                goToSlide(currentIndex - 1);
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            // Configurar autoplay
+            let autoplayInterval = setInterval(nextSlide, 5000);
+            
+            // Pausar autoplay quando o mouse estiver sobre o carrossel
+            const container = document.querySelector('.certifications-container');
+            container.addEventListener('mouseenter', () => {
+                clearInterval(autoplayInterval);
+            });
+            
+            container.addEventListener('mouseleave', () => {
+                autoplayInterval = setInterval(nextSlide, 5000);
+            });
+            
+            // Inicializar
+            updatePosition();
+        });
+    </script>
+</body>
+</html>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 text-white relative">
